@@ -2,16 +2,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "../node_modules/literallycanvas/lib/css/literallycanvas.css"
-const LC = require('literallycanvas');
-
-// ========================================
-function MyApp() {
-  return (<LC.LiterallyCanvasReactComponent imageURLPrefix="/lc-assets/img" />);
-};
+import {Game} from "./Game"
 
 ReactDOM.render(
-  <MyApp/>,
+  <Game/>,
   document.getElementById('root')
 );
 
